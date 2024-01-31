@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 15px;
+    font-family: cabin;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+#top {
+    background-color: #111921;
+}
+
+#top1 {
+    background-color: #233040;
+}
+
+#search {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    width: 50px;
+}
+
+.search input[type=text] {
+    border: 1px solid #ccc;
+    width: 100%; /* Make the search input full width on smaller screens */
+    margin-top: 8px; /* Adjust margin for spacing */
+}
+
+#cart {
+    margin-top: 8px;
+    margin-right: 16px;
+}
+
+#ind {
+    margin-top: 15px;
+}
+
+.text, .text1 {
+    margin-top: 15px;
+    flex-basis: 100%; /* Make text items full width on smaller screens */
+}
+
+#all {
+    margin-left: 8px;
+    margin-top: 15px;
+}
+
+#arrow {
+    margin-top: 15px;
+}
+
+#design {
+    margin-bottom: 25px;
+}
+
+#square {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: auto;
+}
+
+#pic1, #pic2, #pic3, #pic4 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 600px) {
+    /* Adjust styles for screens with a minimum width of 600px */
+    .container, .container1 {
+        flex-wrap: nowrap; /* Revert to no wrap for larger screens */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Adjust styles for screens with a minimum width of 768px */
+    #search {
+        width: auto;
+        margin-top: 0; /* Remove top margin */
+    }
+}
+
+/* Additional media query for smaller screens, e.g., mobile phones */
+@media screen and (max-width: 480px) {
+    #search {
+        padding: 8px; /* Increase padding for better touch experience */
+    }
+}
